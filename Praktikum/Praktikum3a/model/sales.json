@@ -1,0 +1,200 @@
+{
+    "Afko": [{
+        "Aufnr": 1111,
+        "Kdnr": 1,
+        "Datum": "2023/09/28"
+    }, {
+        "Aufnr": 1112,
+        "Kdnr": 1,
+        "Datum": "2023/09/29"
+    }, {
+        "Aufnr": 2222,
+        "Kdnr": 2,
+        "Datum": "2023/09/30"
+    }, {
+        "Aufnr": 3333,
+        "Kdnr": 3,
+        "Datum": "2023/10/06"
+    }],
+    "Afpo": [{
+        "Aufnr": 1111,
+        "Posnr": 10,
+        "Artnr": 1000,
+        "Artmenge": 5.0
+    }, {
+        "Aufnr": 1111,
+        "Posnr": 20,
+        "Artnr": 1001,
+        "Artmenge": 10.0
+    }, {
+        "Aufnr": 1111,
+        "Posnr": 30,
+        "Artnr": 2002,
+        "Artmenge": 5.0
+    }, {
+        "Aufnr": 1111,
+        "Posnr": 40,
+        "Artnr": 2003,
+        "Artmenge": 10.0
+    }, {
+        "Aufnr": 1112,
+        "Posnr": 10,
+        "Artnr": 1000,
+        "Artmenge": 15.0
+    }, {
+        "Aufnr": 1112,
+        "Posnr": 20,
+        "Artnr": 4003,
+        "Artmenge": 23.0
+    }, {
+        "Aufnr": 2222,
+        "Posnr": 10,
+        "Artnr": 2000,
+        "Artmenge": 10.0
+    }, {
+        "Aufnr": 2222,
+        "Posnr": 20,
+        "Artnr": 2001,
+        "Artmenge": 10.0
+    }, {
+        "Aufnr": 2222,
+        "Posnr": 30,
+        "Artnr": 3002,
+        "Artmenge": 10.0
+    }, {
+        "Aufnr": 3333,
+        "Posnr": 10,
+        "Artnr": 3000,
+        "Artmenge": 20.0
+    }, {
+        "Aufnr": 3333,
+        "Posnr": 20,
+        "Artnr": 3001,
+        "Artmenge": 30.0
+    }, {
+        "Aufnr": 3333,
+        "Posnr": 30,
+        "Artnr": 4002,
+        "Artmenge": 40.0
+    }, {
+        "Aufnr": 3333,
+        "Posnr": 40,
+        "Artnr": 1003,
+        "Artmenge": 10.0
+    }],
+    "Kunde": [{
+            "Kdnr": 1,
+            "Name": "Berger",
+            "Vorname": "Emil",
+            "Ort": "Nürnberg"
+        },
+        {
+            "Kdnr": 2,
+            "Name": "Meier",
+            "Vorname": "Hanna",
+            "Ort": "Hannover"
+        }, {
+            "Kdnr": 3,
+            "Name": "Adam",
+            "Vorname": "Otto",
+            "Ort": "München"
+        }, {
+            "Kdnr": 4,
+            "Name": "Schmidt",
+            "Vorname": "Maria",
+            "Ort": "Essen"
+        }, {
+            "Kdnr": 5,
+            "Name": "Heimerl",
+            "Vorname": "Tamara",
+            "Ort": "Nürnberg"
+        }, {
+            "Kdnr": 6,
+            "Name": "Bauer",
+            "Vorname": "Emma",
+            "Ort": "Deggendorf"
+        }
+    ],
+
+    "Artikel": [{
+        "Artnr": 1000,
+        "Artname": "Rotweinglas",
+        "Preis": 8.90
+    }, {
+        "Artnr": 1001,
+        "Artname": "Weißweinglas",
+        "Preis": 7.90
+    }, {
+        "Artnr": 1002,
+        "Artname": "Likörglas",
+        "Preis": 5.80
+    }, {
+        "Artnr": 1003,
+        "Artname": "Wasserglas",
+        "Preis": 6.90
+    }, {
+        "Artnr": 2000,
+        "Artname": "Longdrinkglas",
+        "Preis": 19.90
+    }, {
+        "Artnr": 2001,
+        "Artname": "Whiskyglas",
+        "Preis": 27.90
+    }, {
+        "Artnr": 2002,
+        "Artname": "Trinkglas",
+        "Preis": 15.00
+    }, {
+        "Artnr": 2003,
+        "Artname": "Cognacschwenker",
+        "Preis": 36.90
+    }, {
+        "Artnr": 2004,
+        "Artname": "Grappaglas",
+        "Preis": 22.90
+    }, {
+        "Artnr": 3000,
+        "Artname": "Bierglas 0,2 l",
+        "Preis": 4.90
+    }, {
+        "Artnr": 3001,
+        "Artname": "Bierglas 0,5 l",
+        "Preis": 6.90
+    }, {
+        "Artnr": 3002,
+        "Artname": "Maßkrug 1 l",
+        "Preis": 15.80
+    }, {
+        "Artnr": 3003,
+        "Artname": "Weißbierglas 0,3 l",
+        "Preis": 5.90
+    }, {
+        "Artnr": 3004,
+        "Artname": "Weißbierglas 0,5 l",
+        "Preis": 7.90
+    }, {
+        "Artnr": 4000,
+        "Artname": "Schraubglas 125 ml",
+        "Preis": 4.50
+    }, {
+        "Artnr": 4001,
+        "Artname": "Schraubglas 500 ml",
+        "Preis": 6.90
+    }, {
+        "Artnr": 4002,
+        "Artname": "Auflaufform 3 l",
+        "Preis": 15.80
+    }, {
+        "Artnr": 4003,
+        "Artname": "Auflaufform 5 l",
+        "Preis": 20.90
+    }, {
+        "Artnr": 4004,
+        "Artname": "Tortenform Durchmmesser 20 cm",
+        "Preis": 30.90
+    }, {
+        "Artnr": 4005,
+        "Artname": "Backblech (Glas)",
+        "Preis": 40.90
+    }]
+}

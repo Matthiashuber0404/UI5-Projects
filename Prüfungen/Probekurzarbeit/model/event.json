@@ -1,0 +1,127 @@
+{
+    "Firma": {
+        "Name": "eventis GmbH",
+        "Sitz": "Plattling"
+    },
+    "Orte": [{
+        "Oid": 1,
+        "Ortbez": "Kongresshalle München"
+    },
+    {
+        "Oid": 2,
+        "Ortbez": "Olympiahalle München" 
+    },
+    {
+        "Oid": 3,
+        "Ortbez": "Stadthalle Deggendorf"
+    },
+    {
+        "Oid": 4,
+        "Ortbez": "Alte Mälzerei Regensburg"
+    }
+],
+    "Events": [{
+        "Eid": 1,
+        "Bezeichnung": "Schwanensee",
+        "Datum": "30.11.2023",
+        "Zeit": "20",
+        "Ort": 1,
+        "Preiskategorie": 2
+    }, {
+        "Eid": 2,
+        "Bezeichnung": "Bryan Adams",
+        "Datum": "01.12.2023",
+        "Zeit": "20",
+        "Ort": 2,
+        "Preiskategorie": 1
+    }, {
+        "Eid": 3,
+        "Bezeichnung": "Die kleine Hexe",
+        "Datum": "27.12.2023",
+        "Zeit": "15",
+        "Ort": 3,
+        "Preiskategorie": 3
+    }, {
+        "Eid": 4,
+        "Bezeichnung": "Rock in der Mälze",
+        "Datum": "30.12.2023",
+        "Zeit": "20",
+        "Ort": 4,
+        "Preiskategorie": 3
+    },
+    {
+        "Eid": 5,
+        "Bezeichnung": "Hilary Hahn",
+        "Datum": "01.01.2024",
+        "Zeit": "20",
+        "Ort": 1,
+        "Preiskategorie": 1
+    }, {
+        "Eid": 6,
+        "Bezeichnung": "Rolling Stones",
+        "Datum": "01.02.2024",
+        "Zeit": "20",
+        "Ort": 2,
+        "Preiskategorie": 1
+    }, {
+        "Eid": 7,
+        "Bezeichnung": "Macbeth",
+        "Datum": "27.02.2024",
+        "Zeit": "15",
+        "Ort": 1,
+        "Preiskategorie": 2
+    }, {
+        "Eid": 8,
+        "Bezeichnung": "Jazz & Blues",
+        "Datum": "30.02.2023",
+        "Zeit": "20",
+        "Ort": 4,
+        "Preiskategorie": 3
+    },
+    {
+        "Eid": 9,
+        "Bezeichnung": "Rock around the Clock",
+        "Datum": "01.03.2024",
+        "Zeit": "20",
+        "Ort": 3,
+        "Preiskategorie": 2
+    }, {
+        "Eid": 10,
+        "Bezeichnung": "Die kleine Nachtmusik",
+        "Datum": "21.03.2024",
+        "Zeit": "20",
+        "Ort": 1,
+        "Preiskategorie": 2
+    }, {
+        "Eid": 11,
+        "Bezeichnung": "Comedy am Nachmittag",
+        "Datum": "21.03.2024",
+        "Zeit": "15",
+        "Ort": 3,
+        "Preiskategorie": 3
+    }, {
+        "Eid": 12,
+        "Bezeichnung": "Comedy",
+        "Datum": "04.04.2024",
+        "Zeit": "20",
+        "Ort": 4,
+        "Preiskategorie": 3
+    }],
+
+    "Preise": [{
+        "kat": 1,
+        "preis": 99.90,
+        "waehrung": "Euro",
+        "ermaessigung": 20
+    }, {
+        "kat": 2,
+        "preis": 77.85,
+        "waehrung": "Euro",
+        "ermaessigung": 30
+    }, {
+        "kat": 3,
+        "preis": 45.50,
+        "waehrung": "Euro",
+        "ermaessigung": 50
+    }]
+}

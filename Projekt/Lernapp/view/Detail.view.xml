@@ -1,0 +1,55 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="routing.template.controller.Detail">
+	<App>
+		<pages>
+			<Page title="Grundwissensspiel" class="funBackground">
+				<content>
+					<VBox width="100%">
+						<Text width="96%" class="sapUiSmallMargin" />
+						<Text width="25%" class="sapUiSmallMargin big"  text="Frage 1: " id="idFrageText"></Text>
+						<Panel id="idQuestionSetPanel" content="{quiz>/questionSet}">
+						
+						<Text width="100%" textAlign="Center"  class="Vbig ; slightBackground"  text="{quiz>Frage}"></Text>
+						
+						</Panel>
+
+						<HBox>
+							<VBox width="20%">
+								<Text class="big sapUiSmallMargin" id="idPunkteText" text="Punkte: 0"></Text>
+							</VBox>
+							<VBox width="68%" id="idVBox">
+								<Text textAlign="Center" class="Vbig sapUiSmallMargin slightBackground" id="idEndPunkteText"></Text>
+								<Button enabled="false" visible="false" id="idHighScoresButton" width="100%" text="HighScores" press="onHighScoresButtonPress" />
+								<Button enabled="false" visible="false"  width="100%" text="Spiel neu Starten" press="onSpielneuStartenButtonPress" id="idSpielneuStartenButton" />
+							</VBox>
+							<VBox width="12%">
+								<Text class="big sapUiSmallMargin" id="idTimeText" text="30"></Text>
+							</VBox>
+						</HBox>
+
+						<Text width="96%" class="sapUiSmallMargin" />
+						<Panel id="idQuizanswerSetPanel" content="{quiz>/quizanswerSet}">
+							<GenericTile width="49%" class="test no-hover-effect" id="idAnswerGenericTile" press="onGenericTilePress">
+								<TileContent class="ct">
+									<Text class="big" text="{quiz>Antwort}" />
+								</TileContent>
+								<TileContent
+									id="idSecondTileContent"
+									footer=""
+									unit=""
+								>
+									<content>
+										
+										<Text class="bingbong" id="idRichtigText" text="&#10;&#10;&#10;&#10;&#10; A: {quiz>Richtig}"></Text>
+									</content>
+								</TileContent>
+							</GenericTile>
+						</Panel>
+						
+						
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

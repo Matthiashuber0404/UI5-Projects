@@ -1,0 +1,20 @@
+<mvc:View  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="routing.template.controller.Overview">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<Panel content="{sales>/Afko}" id="idKategoriePanel">
+					<GenericTile header="Auftrag {sales>Aufnr}" press="onGenericTilePress">
+						<TileContent footer="Kunde {sales>Kdnr}">
+							<Text text="{sales>Datum}"></Text>
+						</TileContent>
+					</GenericTile>
+				</Panel>
+				
+				<content>
+					<Button text="zur Detailseite" press="onZurDetailseiteButtonPress" />
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

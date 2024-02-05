@@ -1,0 +1,77 @@
+/* Enter your custom styles here */
+.big {
+    font-size: large;
+    text-align: center;
+}
+
+.Vbig {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.ct {
+    text-align: center;
+}
+
+.true {
+    background-color: greenyellow;
+}
+.trueish {
+    color: greenyellow;
+    font-size: x-large;
+    text-align: center;
+}
+
+.false {
+    background-color: red;
+}
+.wrong {
+    
+    color: red;
+    font-size: x-large;
+    text-align: center;
+    
+}
+
+.bingbong {
+    font-size: 1px; 
+    display: block; 
+    visibility: hidden;
+}
+
+.buttonContainer {
+    height: 100%;
+}
+
+  
+.buttonFlexBox {
+    width: 100%;
+    padding-top: 0.5rem; 
+}
+
+.marginright {
+    margin-right: 5px;
+}  
+
+.background {
+    background-color: rgba(240, 248, 255, 0.65);
+    background-blend-mode: lighten;
+}
+
+.funBackground {
+    background-image: url('../pics/dings.jpg');
+    background-size: cover;
+    
+}
+
+.slightBackground {
+    background-color: rgba(232, 232, 233, 0.9);
+}
+
+.highscoreBackground{
+    background-image: url('../pics/background.jpg');  
+}
+
+.userbackground{
+    background-image: url('../pics/background.jpg');  
+}

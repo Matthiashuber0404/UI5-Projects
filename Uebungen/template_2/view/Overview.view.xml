@@ -1,0 +1,42 @@
+<mvc:View  xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m"
+	controllerName="routing.template.controller.Overview">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				<HBox >
+					<VBox width="55%" class="mgleft">
+					<Text class="smheader brsmlb" text="Unser Restaurant"></Text>
+
+
+
+
+					
+					<l:VerticalLayout content="{food>/Anschrift}" >
+						<Text text="{food>Name}"></Text>
+						<Text text="{food>Strasse}"></Text>
+						<Text text="{food>Plz} {food>Ort}"></Text>
+					</l:VerticalLayout>
+					</VBox>
+					<VBox width="45%" class="mgleft">
+					<Text class="smheader brsmlb" text="Inhaber"></Text>
+					
+					</VBox>
+				</HBox>
+
+
+					<l:HorizontalLayout content="{food>/Kategorie}" allowWrapping="true"> 
+					<GenericTile class="sapUiSmallMargin" header="{food>katbez}" subheader="{food>katid}">
+						<TileContent footer="Footer">
+							<ImageContent src="{food>pic}"></ImageContent>
+						</TileContent>
+					</GenericTile>
+					</l:HorizontalLayout>
+
+
+					<Button text="zur Detailseite" press="onZurDetailseiteButtonPress" />
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

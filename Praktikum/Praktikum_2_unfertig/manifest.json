@@ -1,0 +1,121 @@
+{
+	"_version": "1.49.0",
+	"sap.app": {
+		"id": "routing.template",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "0.0.1"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "routing.template.view.App1",
+			"type": "XML",
+			"async": true,
+			"id": "App1"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "routing.template.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "routing.template.view",
+				"controlAggregation": "pages",
+				"controlId": "idApp",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"name": "RouteApp1",
+					"pattern": "RouteApp1",
+					"target": [
+						"TargetApp1"
+					]
+				},
+				{
+					"name": "OverviewRoute",
+					"pattern": "",
+					"target": [
+						"Ov"
+					]
+				},
+				{
+					"name": "DetailRoute",
+					"pattern": "Detail/{detailPath}",
+					"target": [
+						"Det"
+					]
+				}
+				
+			],
+			"targets": {
+				"TargetApp1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "App1",
+					"viewName": "App1"
+				},
+				"Ov": {
+					"viewType": "XML",
+					"viewName": "Overview"
+				},
+				"Det": {
+					"viewType": "XML",
+					"viewName": "Detail"
+				}
+			}
+		}
+	}
+}

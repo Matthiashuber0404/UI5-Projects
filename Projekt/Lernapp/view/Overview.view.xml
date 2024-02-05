@@ -1,0 +1,121 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="routing.template.controller.Overview"
+>
+    <App>
+        <pages>
+            <Page
+                title="Startbildschirm"
+                class="background"
+            >
+                <content>
+                    <HBox height="40%">
+                        <VBox width="80%">
+                        </VBox>
+                        <VBox
+                            width="20%"
+                            class="buttonContainer"
+                        >
+                            <FlexBox
+                                alignItems="End"
+                                justifyContent="End"
+                                class="buttonFlexBox"
+                            >
+                                <Button
+                                    text="Kein User angemeldet"
+                                    class="marginright"
+                                    id="idUserButton"
+                                    type="Transparent"
+                                    press="onUserButtonPress"
+                                />
+                                <Button
+                                    text="abmelden"
+                                    id="idAbmeldenButton"
+                                    class="marginright"
+                                    type="Reject"
+                                    enabled="false"
+                                    visible="false"
+                                    press="onAbmeldenButtonPress"
+                                />
+                            </FlexBox>
+                        </VBox>
+                    </HBox>
+                    <HBox height="60%">
+                        <VBox width="100%">
+                            <Bar>
+                                <contentMiddle>
+                                    <Input
+                                        id="idNameInput"
+                                        change="onInputChange"
+                                        placeholder="Benutzername eingeben"
+                                        required="true"
+                                        textAlign="Center"
+                                    />
+                                </contentMiddle>
+                            </Bar>
+
+                            <Bar>
+                                <contentMiddle>
+                                    <Input
+                                        id="idPassInput"
+                                        change="onInputChange"
+                                        placeholder="Passwort eingeben"
+                                        type="Password"
+                                        required="true"
+                                        textAlign="Center"
+                                    />
+                                </contentMiddle>
+                            </Bar>
+
+                            <Bar>
+                                <contentMiddle>
+                                    <Button
+                                        text="Anmelden"
+                                        id="idAnmeldenButton"
+                                        enabled="false"
+                                        width="50%"
+                                        type="Emphasized"
+                                        class="marginright"
+                                        press="onAnmeldenButtonPress"
+                                    />
+                                    <Button
+                                        text="Registrieren"
+                                        id="idRegistrierenButton"
+                                        enabled="false"
+                                        width="50%"
+                                        class="marginright"
+                                        press="onRegistrierenButtonPress"
+                                    />
+                                </contentMiddle>
+                            </Bar>
+
+                            <Bar>
+                                <contentMiddle>
+                                    <Button
+                                        width="100%"
+                                        text="HighScores"
+                                        press="onHighScoresButtonPress"
+                                    />
+                                </contentMiddle>
+                            </Bar>
+
+                            <Bar>
+                                <contentMiddle>
+                                    <Button
+                                        width="100%"
+                                        type="Accept"
+                                        id="idSpielStartenButton"
+                                        enabled="false"
+                                        text="Spiel Starten"
+                                        press="onSpielStartenButtonPress"
+                                    />
+                                </contentMiddle>
+                            </Bar>
+                        </VBox>
+                    </HBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

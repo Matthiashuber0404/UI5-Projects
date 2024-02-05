@@ -1,0 +1,64 @@
+{
+    "PERSON": {
+        "Name": "Huber",
+        "Vorname": "Matthias",
+        "Ort": "Aufhausen"
+    },
+    
+        "PERSONEN": [
+            {
+                "Name": "Köckeis",
+                "Vorname": "Johannes",
+                "Ort": "Bonn"
+            },
+            {
+                "Name": "Schauer",
+                "Vorname": "Georg",
+                "Ort": "Teisnach"
+            }
+        ],
+        "HOBBYS": [
+            {
+                "Bezeichnung": "Schwimmen",
+                "Icon":"sap-icon://accept",
+                "Beschreibung":"im Hallenbad",
+                "Information":""
+            },
+            {
+                "Bezeichnung": "Wandern",
+                "Icon":"sap-icon://accidental-leave",
+                "Beschreibung":"",
+                "selected": true,
+                "Information":"Am Arber liegt schon Schnee"
+            }
+        ],
+        "KOLLEGEN": [
+            {
+                "Name": "Graf",
+                "Vorname": "Matthias",
+                "Buero": "108"
+            },
+            {
+                "Name": "Perl",
+                "Vorname": "Tobias",
+                "Buero": "210"
+            }
+        ],
+        "FAECHER": [
+           {
+                "Header":"Projekte",
+                "Subheader":"Fisi und Programmierung",
+                "Footer":"B12a",
+                "Text":"Projekte sind cool",
+                "Image":""
+            },
+            {
+                "Header":"Pause",
+                "Subheader":"Pause ist immer zu kurz",
+                "Footer":"FS12",
+                "Text":"",
+                "Image":"pics/avatar1.png"
+            }
+        ]
+     }
+ 

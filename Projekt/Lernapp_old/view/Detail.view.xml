@@ -1,0 +1,46 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="routing.template.controller.Detail">
+	<App>
+		<pages>
+			<Page title="{i18n>titleSP}">
+				<content>
+					<VBox width="100%">
+						<Text width="96%" class="sapUiSmallMargin" />
+						<Panel>
+						
+						<Text width="100%" textAlign="Center" class="Vbig" text="{quiz>/questionSet/1/Frage}"></Text>
+						
+						</Panel>
+
+						<Text width="96%" class="sapUiSmallMargin" />
+						<Panel id="idGenericsPanel" content="{quiz>/quizanswerSet}">
+							<GenericTile width="48%" id="idQ1GenericTile" class="t"  press="onGenericTilePress">
+								<TileContent class="ct">
+									<Text class="big" text="{quiz>Antwort}" />
+								</TileContent>
+							</GenericTile>
+							<Text class="sapUiSmallMargin" />
+							<GenericTile width="49%" id="idQ2GenericTile" class="f" press="onGenericTilePress">
+								<TileContent class="ct">
+									<Text class="big" text="Antwort 2" />
+								</TileContent>
+							</GenericTile>
+							<Text width="96%" class="sapUiSmallMargin" />
+							<GenericTile width="48%" id="idQ3GenericTile" class="f"  press="onGenericTilePress">
+								<TileContent class="ct">
+									<Text class="big" text="Antwort 3" />
+								</TileContent>
+							</GenericTile>
+							<Text class="sapUiSmallMargin" />
+							<GenericTile width="49%" id="idQ4GenericTile" class="f"  press="onGenericTilePress">
+								<TileContent class="ct">
+									<Text class="big" text="{quiz>Antwort}" />
+								</TileContent>
+							</GenericTile>
+						</Panel>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

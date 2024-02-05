@@ -1,0 +1,24 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="routing.template.controller.Detail">
+	<App>
+		<pages>
+			<Page title="{i18n>Detail}">
+				<content>
+					<Panel>
+						<Label text="Klasse" labelFor="idClassSearchField"></Label>
+						<SearchField id="idClassSearchField" width="100px" search="onSearchFieldSearch"></SearchField>
+					
+						<Text text="{class>/Shortname}"></Text>
+						<Text text="{class>/Longterm}"></Text>
+					
+						<List id="idPupilSetList" items="{class>/pupilSet/results}">
+							<StandardListItem title="{class>Surname} {class>Name}"
+											  icon="sap-icon://accept"
+											  description=" Gruppe {class>Groupno}"></StandardListItem>
+						</List>
+					
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

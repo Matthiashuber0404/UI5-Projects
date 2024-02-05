@@ -1,0 +1,74 @@
+<mvc:View controllerName="basic.template.controller.Template1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <HBox>
+                            <VBox class="text1">
+                                <Text class="fett" text="Meine erste UI-Anwendung" />
+                                <Text text="Neuer Eintrag" />
+                                <Text class="fett" text="Dritter Eintrag" />
+                                <GenericTile header="Das ist eine Box" class="box" width="40%" />
+                            </VBox>
+                            <VBox class="rechts">
+                                <Image src="pics/20230920_082328.jpg" width="100%" />
+                            </VBox>
+                        </HBox>
+
+                        <VBox>
+                            <Carousel loop="true" arrowsPlacement="PageIndicator">
+                                <pages>
+                                    <Image src="pics/20230920_082328.jpg" width="20%" />
+                                    <Image src="pics/20230920_090430.jpg" width="20%" />
+                                    <Image src="pics/20230920_113117.jpg" width="20%" />
+                                    <Image src="pics/20230920_101847.jpg" width="20%" />
+                                    <Image src="pics/20230920_110345.jpg" width="20%" />
+                                </pages>
+                            </Carousel>
+                        </VBox>
+
+                        <HBox>
+                            <VBox class="text1">
+                                <Text text="Liste unserer Fächer" />
+                                <List id="listId" mode="SingleSelect">
+                                    <StandardListItem title="ABAP" icon="sap-icon://accept" description="Advanced Business Application Programming" />
+                                    <StandardListItem title="UI5" icon="pics/20230920_113117.jpg" selected="true"/>
+                                </List>
+                            </VBox>
+                            <VBox class="rechts">
+                                <Text text="ABAP-Stoff"></Text>
+                                <Table id="tableId">
+                                    <columns>
+                                        <Column>
+                                            <Label text="Kapitel"></Label>
+                                        </Column>
+                                        <Column>
+                                            <Label text="Dauer in Wochen"></Label>
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                    <ColumnListItem  type="Active">
+                                    <cells>
+                                        <Text text="Grundlagen"></Text>
+                                        <Text text="4 Wochen"></Text>
+                                    </cells>
+                                    </ColumnListItem>
+                                    <ColumnListItem  type="Active">
+                                    <cells>
+                                        <Text text="ABAP Objects"></Text>
+                                        <Text text="8 Wochen"></Text>
+                                    </cells>
+                                    </ColumnListItem>
+                                    </items>
+                                </Table>
+                            </VBox>
+                        </HBox>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

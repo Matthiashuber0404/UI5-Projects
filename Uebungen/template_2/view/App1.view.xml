@@ -1,0 +1,11 @@
+<mvc:View controllerName="routing.template.controller.App1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="idShell">
+		<App id="idApp">
+			<pages>
+				<Page id="idPage" title="Titel">
+					<content></content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

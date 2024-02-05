@@ -1,0 +1,57 @@
+<mvc:View
+    controllerName="basic.template.controller.Template1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+>
+    <Shell id="idShell">
+        <App id="idApp">
+            <pages>
+                <Page
+                    id="idPage"
+                    title="{i18n>title}"
+                >
+                    <content>
+                        <!-- <form:Form title="Einfache Eingabefelder" layout="ColumnLayout"> -->
+                        <Label
+                            text="Username"
+                            labelFor="idUsernameInput"
+                        />
+                        <Input
+                            id="idUsernameInput"
+							valueStateText="Der Username muss zwischen 3 und 8 Zeichen sein"
+                            value="{ path:'', 
+									 type: 'sap.ui.model.type.String',
+									 constraints: { minLength:3, maxLength:8 } }"
+							change="onInputChange"/>
+                        <Label
+                            text="Alter"
+                            labelFor="idAlterInput"
+                        />
+                        <Input
+                            id="idAlterInput"
+                            type="Number"
+							valueStateText="Das Alter muss zwischen 1 und 99 liegen"
+							value="{
+								path:'',
+								type: 'sap.ui.model.type.Integer',
+								constraints: { minimum: 1, maximum:99 } }"
+							change="onInputAlterChange"
+                        />
+                        <Button
+                            text="Abschicken"
+                            press="onAbschickenButtonPress"
+                        />
+                        <TextArea
+                            id="idTextArea"
+                            rows="5"
+                            placeholder="Ihre Eingaben"
+                        />
+                        <!-- </form:Form> -->
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

@@ -1,0 +1,21 @@
+/* Enter your custom styles here */
+.big {
+    font-size: large;
+}
+
+.Vbig {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.ct {
+    text-align: center;
+}
+
+.true {
+    background-color: greenyellow;
+}
+
+.false {
+    background-color: red;
+}

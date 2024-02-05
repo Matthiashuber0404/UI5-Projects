@@ -1,0 +1,47 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="routing.template.controller.Overview">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				<HBox height="40%">
+				</HBox>
+				<HBox height="60%">
+					<VBox width="100%">
+						<Bar>
+							<contentMiddle>
+								<Input id="idNameInput" placeholder="Benutzername eingeben" required="true" textAlign="Center" ></Input>
+							</contentMiddle>
+						</Bar>
+
+					
+						<Bar>
+							<contentMiddle>
+								<Input id="idPassInput" placeholder="Passwort eingeben" type="Password" required="true" textAlign="Center" ></Input>
+							</contentMiddle>
+						</Bar>
+
+					
+						<Bar>
+							<contentMiddle>
+								<Button width="100%" text="HighScores" press="onHighScoresButtonPress" />
+							</contentMiddle>
+						</Bar>
+
+					
+						<Bar>
+							<contentMiddle>
+								
+								<Button width="100%" text="Spiel Starten" press="onSpielStartenButtonPress" />
+							</contentMiddle>
+						</Bar>
+
+					</VBox>
+				</HBox>
+				
+			
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

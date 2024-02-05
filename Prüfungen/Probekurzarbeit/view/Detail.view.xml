@@ -1,0 +1,56 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="routing.template.controller.Detail">
+	<App>
+		<pages>
+			<Page title="{i18n>Detail}">
+				<content>
+					<HBox class="sapUiSmallMargin">
+						<Label text="Veranstalter"></Label>
+						<SearchField width="100%" id="idVSearchField" ></SearchField>
+						<Label text="Bezeichnung"></Label>
+						<SearchField width="100%" id="idBSearchField" ></SearchField>
+						<Label text="Uhrzeit"></Label>
+						<SearchField width="100%" id="idUSearchField" ></SearchField>
+						<Button type="Accept" text="Suche" press="onSucheButtonPress"></Button>
+						<Button type="Reject" text="Filter löschen" press="onFilterlöschenButtonPress"></Button>
+						
+					</HBox>
+					<Table id="idEventsTable" items="{events>/Events}" itemPress="onItemPressPress">
+						<columns>
+							<Column>
+								<Label text="Event-Id"></Label>
+							</Column>
+							<Column>
+								<Label text="Bezeichnung"></Label>
+							</Column>
+							<Column>
+								<Label text="Datum"></Label>
+							</Column>
+							<Column>
+								<Label text="Zeit"></Label>
+							</Column>
+							<Column>
+								<Label text="Preiskategorie"></Label>
+							</Column>
+							<Column>
+								<Label text="Ort-Id"></Label>
+							</Column>
+						</columns>
+	
+						<items>
+						<ColumnListItem  type="Active">
+						<cells >
+							<Text text="{events>Eid}"></Text>
+							<Text text="{events>Bezeichnung}"></Text>
+							<Text text="{events>Datum}"></Text>
+							<Text text="{events>Zeit}"></Text>
+							<Text text="{events>Preiskategorie}"></Text>
+							<Text text="{events>Ort}"></Text>
+						</cells>
+						</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

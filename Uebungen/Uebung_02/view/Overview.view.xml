@@ -1,0 +1,47 @@
+<mvc:View  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="routing.template.controller.Overview">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+
+				<content>
+					<VBox>
+						<Text text="Persönliche Daten"></Text>
+						<Text text="{data>/PERSON/Vorname} {data>/PERSON/Name}"></Text>
+						<Text text="{data>/PERSON/Ort}"></Text>
+					</VBox>
+					<VBox>
+						<Text text="Daten aus dem Array" ></Text>
+						<Text text="{data>/PERSONEN/1/Vorname} {data>/PERSONEN/1/Name}"></Text>
+					</VBox>
+					<List id="idHobbysList" items="{data>/HOBBYS}" mode="MultiSelect" selectionChange="onHobbysListSelectionChange">
+						<StandardListItem title="{data>Bezeichnung} " description="{data>Beschreibung}"></StandardListItem>
+					</List>
+
+					<Table id="idKollegenTable" items="{data>/KOLLEGEN}" itemPress="onKollegenTableItemPress">
+			<columns>
+        <Column><Label text="Vorname"></Label></Column>
+        <Column><Label text="Nachname"></Label></Column>
+        <Column><Label text="Büronummer"></Label></Column>
+    </columns>
+    <items>
+        <ColumnListItem type="Active">
+            <cells>
+                <Text text="{data>Vorname}"/>
+                <Text text="{data>Name}"/>
+                <Text text="{data>Buero}"/>
+            </cells>
+        </ColumnListItem>
+    </items>
+					</Table>
+				</content>
+				<footer>
+				<Toolbar>
+					<ToolbarSpacer ></ToolbarSpacer>
+				<Button text="zur Detailseite" press="onZurDetailseiteButtonPress" />
+				</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

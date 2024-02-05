@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="routing.template.controller.Detail">
+	<App>
+		<pages>
+			<Page title="{i18n>Detail}">
+				<Table id="idAfpoTable" items="{sales>/Afpo}">
+					<columns>
+						<Column>
+							<Label text="Positionsnummer"></Label>
+						</Column>
+						<Column>
+							<Label text="Artikelnummer"></Label>
+						</Column>
+						<Column>
+							<Label text="Artikelmenge"></Label>
+						</Column>
+					</columns>
+
+					<items>
+					<ColumnListItem  type="Active">
+					<cells>
+						<Text text="{sales>Posnr}"></Text>
+						<Text text="{sales>Artnr}"></Text>
+						<Text text="{sales>Artmenge}"></Text>
+					</cells>
+					</ColumnListItem>
+					</items>
+				</Table>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

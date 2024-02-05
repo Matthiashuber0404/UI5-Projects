@@ -1,0 +1,186 @@
+{
+    "Anschrift": {
+        "Name": "School-Bistro",
+        "Strasse": "Georg-Eckl-Str. 18",
+        "Plz": 94447,
+        "Ort": "Plattling"
+    },
+    "Mitarbeiter": [{
+            "mid": 1,
+            "Nachname": "Schulze",
+            "Vorname": "Emil",
+            "Funktion": "Koch"
+        },
+        {
+            "mid": 2,
+            "Nachname": "Baum",
+            "Vorname": "Paula",
+            "Funktion": "Chefin"
+        },
+        {
+            "mid": 3,
+            "Nachname": "Holzer",
+            "Vorname": "Leon",
+            "Funktion": "Bedienung"
+        }
+
+    ],
+    "Kategorie": [{
+            "katid": 100,
+            "katbez": "Vorspeisen",
+            "pic": ""
+
+        },
+        {
+            "katid": 200,
+            "katbez": "Fleischgerichte",
+            "pic": ""
+        },
+        {
+            "katid": 300,
+            "katbez": "Fisch",
+            "pic": ""
+        },
+        {
+            "katid": 400,
+            "katbez": "Vegetarisch",
+            "pic": "pics/zuchini.png"
+        },
+        {
+            "katid": 500,
+            "katbez": "Nachspeisen",
+            "pic": ""
+        },
+        {
+            "katid": 600,
+            "katbez": "Salate",
+            "pic": ""
+        },
+        {
+            "katid": 700,
+            "katbez": "Beilagen",
+            "pic": ""
+        }
+    ],
+    "Food": [{
+            "id": 1,
+            "bezeichnung": "Grießnockerlsuppe",
+            "kategorie": 100,
+            "preis": 3.50
+        },
+        {
+            "id": 2,
+            "bezeichnung": "Spargelsuppe",
+            "kategorie": 100,
+            "preis": 5.50
+        },
+        {
+            "id": 3,
+            "bezeichnung": "Räucherlachs",
+            "kategorie": 100,
+            "preis": 7.50
+        },
+        {
+            "id": 4,
+            "bezeichnung": "Schweinebraten",
+            "kategorie": 200,
+            "preis": 8.50
+        },
+        {
+            "id": 5,
+            "bezeichnung": "Wiener Schnitzel",
+            "kategorie": 200,
+            "preis": 10.90
+        },
+        {
+            "id": 6,
+            "bezeichnung": "Jägerbraten",
+            "kategorie": 200,
+            "preis": 9.50
+        },
+        {
+            "id": 7,
+            "bezeichnung": "Pizza",
+            "kategorie": 200,
+            "preis": 8.00
+        },
+        {
+            "id": 8,
+            "bezeichnung": "Spagetti Bolognese",
+            "kategorie": 200,
+            "preis": 7.50
+        },
+        {
+            "id": 9,
+            "bezeichnung": "Lachs",
+            "kategorie": 300,
+            "preis": 12.90
+        },
+        {
+            "id": 10,
+            "bezeichnung": "Zanderfilet",
+            "kategorie": 300,
+            "preis": 13.90
+        },
+        {
+            "id": 11,
+            "bezeichnung": "Käsespätzle",
+            "kategorie": 400,
+            "preis": 6.90
+        },
+        {
+            "id": 12,
+            "bezeichnung": "Spinatknödel",
+            "kategorie": 400,
+            "preis": 8.90
+        },
+        {
+            "id": 13,
+            "bezeichnung": "Gemischtes Eis",
+            "kategorie": 500,
+            "preis": 4.50
+        },
+        {
+            "id": 14,
+            "bezeichnung": "Mousse au Chocolat",
+            "kategorie": 500,
+            "preis": 5.50
+        },
+        {
+            "id": 15,
+            "bezeichnung": "Tiramisu",
+            "kategorie": 500,
+            "preis": 5.00
+        },
+        {
+            "id": 16,
+            "bezeichnung": "Kleiner Salat",
+            "kategorie": 600,
+            "preis": 3.50
+        },
+        {
+            "id": 17,
+            "bezeichnung": "Großer gemischter Salat",
+            "kategorie": 600,
+            "preis": 6.50
+        },
+        {
+            "id": 18,
+            "bezeichnung": "Knödel",
+            "kategorie": 700,
+            "preis": 2.50
+        },
+        {
+            "id": 19,
+            "bezeichnung": "Pommes frites",
+            "kategorie": 700,
+            "preis": 3.50
+        },
+        {
+            "id": 20,
+            "bezeichnung": "Reis",
+            "kategorie": 700,
+            "preis": 2.50
+        }
+    ]
+}

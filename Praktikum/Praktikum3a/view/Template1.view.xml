@@ -1,0 +1,23 @@
+<mvc:View controllerName="basic.template.controller.Template1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<HBox class="sapUiSmallMargin">
+							<Label text="Bezeichnung"></Label>
+							<SearchField width="100%" id="idSearchField" search="onSearchFieldSearch" ></SearchField>
+						</HBox>
+						<Panel content="{sales>/Artikel}" id="idKategoriePanel">
+							<List id="listId" mode="None" class="brsmlb">
+								<StandardListItem title="{sales>Artname}" 
+								description="Preis: {path: 'sales>Preis', formatter: '.formatPreis' } Euro 		PK{sales>Artnr}"/>
+								
+							</List>	
+
+							
+						</Panel>
+					</content>				
+				</Page>
+			</pages>
+		</App>
+</mvc:View>

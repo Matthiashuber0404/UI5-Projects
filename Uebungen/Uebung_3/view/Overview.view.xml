@@ -1,0 +1,48 @@
+<mvc:View  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="routing.template.controller.Overview">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Panel>
+						<Label text="Klassen-Id"></Label>
+						<Input id="idKlasseInput" width="100px"></Input>
+						<Label text="Gruppe"></Label>
+						<Input id="idGruppeInput" width="100px" ></Input>
+						<Button type="Accept" text="Suche" press="onSucheButtonPress"></Button>
+						<Button
+							text="ZurDetailseite"
+							type="Accept"
+							press="onZurDetailseiteButtonPress"
+						>
+							
+						</Button>
+					</Panel>
+
+					<Table items="{schueler>/pupilSet}" id="idSchuelerTable">
+						<columns>
+							<Column> <Label text="Name"></Label> </Column>
+							<Column> <Label text="Vorname"></Label> </Column>
+							<Column> <Label text="Klasse"></Label> </Column>
+							<Column> <Label text="Gruppe"></Label> </Column>
+							<Column> <Label text="Ort"></Label> </Column>
+						</columns>
+						<items>
+							
+							<ColumnListItem >
+								<cells>
+								<Text text="{schueler>Surname}"></Text>
+								<Text text="{schueler>Name}"></Text>
+								<Text text="{schueler>Cid}"></Text>
+								<Text text="{schueler>Groupno}"></Text>
+								<Text text="{schueler>City}"></Text>
+								</cells>
+							</ColumnListItem>
+							
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

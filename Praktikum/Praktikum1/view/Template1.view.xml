@@ -1,0 +1,60 @@
+<mvc:View controllerName="basic.template.controller.Template1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					<VBox class="center br">
+						<Text class="header" text="Mein persöhnliches Profil"></Text>
+					</VBox>
+					
+					<HBox>
+					<VBox width="65%" class="mgleft">
+					<Text class="smheader brsmlb" text="Persönliche Daten"></Text>
+					
+					<Text class="mgleft " text="Matthias Huber"></Text>
+					<Text class="mgleft brsmlb" text="Aufhausen"></Text>
+					
+					<Text class="smheader" text="Hobbys"></Text>
+					<List id="listId" mode="None" class="brsmlb">
+                                    <StandardListItem title="Motorrad fahren" />
+                                    <StandardListItem title="Programmieren" />
+                    </List>
+					<Text class="smheader" text="Meine Kollegen"></Text>
+                                <Table id="tableId">
+                                    <columns>
+                                        <Column>
+                                            <Label text="Vorname"></Label>
+                                        </Column>
+                                        <Column>
+                                            <Label text="Nachname"></Label>
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                    <ColumnListItem  type="Active">
+                                    <cells>
+                                        <Text text="Valentin"></Text>
+                                        <Text text="Brandl"></Text>
+                                    </cells>
+                                    </ColumnListItem>
+                                    <ColumnListItem  type="Active">
+                                    <cells>
+                                        <Text text="Florian"></Text>
+                                        <Text text="Brandtner"></Text>
+                                    </cells>
+                                    </ColumnListItem>
+                                    </items>
+                                </Table>
+					</VBox>
+					<VBox width="35%" class="center">
+					<Text class="smheader brsmlb" text="So sehe ich aus"></Text>
+					<Image src="pics/Download.jpg" width="60%"></Image>
+					</VBox>
+					
+					</HBox>
+					</content>					
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

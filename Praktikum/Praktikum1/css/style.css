@@ -1,0 +1,31 @@
+.header {
+    color: rgb(201, 65, 15);
+    font-size: xx-large;
+}
+
+.center {
+    text-align: center;
+}
+
+.smheader {
+    color: red;
+    font-size: large;
+}
+
+.br {
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+.brsmlt {
+    
+    margin-top: 5px;
+}
+
+.brsmlb {
+    margin-bottom: 15px;
+}
+
+.mgleft {
+    margin-left: 10px;
+}

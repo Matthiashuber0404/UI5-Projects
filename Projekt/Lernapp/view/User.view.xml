@@ -1,0 +1,85 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="routing.template.controller.User"
+>
+    <App>
+        <pages>
+            <Page title="Userverwaltung">
+                <content>
+                    <Table id="idPersonTable">
+                        <columns>
+                            <Column>
+                                <Text text="Username" />
+                            </Column>
+                            <Column>
+                                <Text text="Passwort" />
+                            </Column>
+                            <Column>
+                                <Text text="Persönlicher Highscore" />
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text
+                                        id="idUserText"
+                                        text=""
+                                    />
+                                </cells>
+                                <cells>
+                                    <Text
+                                        id="idPWText"
+                                        text=""
+                                    />
+                                </cells>
+                                <cells>
+                                    <Text
+                                        id="idPunkteText"
+                                        text=""
+                                    />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                    <Bar>
+                        <contentMiddle>
+                            <Button
+                                type="Ghost"
+                                text="Passwort ändern"
+                                id="idPasswortNdernButton"
+                                press="onidPasswortNdernButtonPress"
+                            />
+                        </contentMiddle>
+                    </Bar>
+					<Bar>
+                        <contentMiddle>
+							<Input width="30%" placeholder="Altes Passwort eingeben" id="idAltesPasswortEingebenInput" type="Password"  enabled="false"
+							visible="false" ></Input>
+							<Input width="30%" placeholder="Neues Passwort eingeben"  id="idNeuesPasswortEingebenInput" type="Password" enabled="false"
+							visible="false" ></Input>
+                            <Button
+                                type="Accept"
+                                text="Passwort ändern"
+                                enabled="false"
+								visible="false"
+								id="idPasswortaendernBestaetigenButton"
+                                press="onidPasswortaendernBestaetigenButtonPress"
+                            />
+							<Button
+							type="Reject"
+							text="Abbrechen"
+							enabled="false"
+							visible="false"
+							id="idAbbrechenButton"
+							press="onidAbbrechenButtonPress"
+						/>
+                        </contentMiddle>
+                    </Bar>
+                   
+                    
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
